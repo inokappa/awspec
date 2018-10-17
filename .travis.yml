@@ -6,6 +6,9 @@ rvm:
   - 2.1.10
   - jruby-head
 
+env:
+  - JRUBY_OPTS='--dev'
+
 before_install:
   - gem update --system
   - gem pristine bundler
